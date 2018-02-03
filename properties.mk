@@ -362,12 +362,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.power.pasr.enabled=false
 
-# Perf
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.perf-hal.ver=2.2 \
-    ro.vendor.perf.scroll_opt=1
-
 # Phantom process monitoring
 PRODUCT_VENDOR_PROPERTIES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
