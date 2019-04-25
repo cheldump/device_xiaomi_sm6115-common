@@ -71,10 +71,6 @@ on init
     chown system system /dev/stune/top-app/schedtune.boost
     chown system system /dev/cpu_dma_latency
 
-    # Support legacy paths
-    symlink /sdcard /mnt/sdcard
-    symlink /sdcard /storage/sdcard0
-
     # Create cgroup mount point for memory
     mkdir /sys/fs/cgroup/memory/bg 0750 root system
     write /sys/fs/cgroup/memory/bg/memory.swappiness 140
