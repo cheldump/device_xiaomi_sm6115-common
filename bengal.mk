@@ -694,6 +694,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libqti-perfd-client
 
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.extension_library=libqti-perfd-client.so
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
