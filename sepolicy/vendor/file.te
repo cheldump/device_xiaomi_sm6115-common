@@ -1,5 +1,6 @@
 # Audio
 type audio_socket, file_type;
+type public_adsprpcd_file, file_type;
 
 # AVB
 type avb_file, file_type;

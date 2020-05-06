@@ -124,6 +124,11 @@
 /sys/devices/platform/soc/4a84000.i2c/i2c-0/0-0066/power_supply/sc8551-standalone/charging_enabled    u:object_r:vendor_sysfs_battery_supply:s0
 /sys/devices/platform/soc/4a84000.i2c/i2c-0/0-0071/power_supply/bms(/.*)?                u:object_r:vendor_sysfs_battery_supply:s0
 
+# Hexagon DSP-side executable needed for Halide operation
+# This is labeled as public_adsprpcd_file as it needs to be read by apps
+# (e.g. Google Camera App)
+/mnt/vendor/dsp/fastrpc_shell_3                                                          u:object_r:public_adsprpcd_file:s0
+
 # HVDCP
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm7250b@0:qcom,qpnp-smb5/iio:device[0-9](/.*?) u:object_r:vendor_sysfs_battery_supply:s0
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm7250b@0:qpnp,qg/iio:device[0-9](/.*?)  u:object_r:vendor_sysfs_battery_supply:s0
