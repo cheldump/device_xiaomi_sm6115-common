@@ -64,6 +64,7 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
     androidboot.hardware=qcom \
+    androidboot.init_fatal_reboot_target=recovery \
     androidboot.memcg=1 \
     console=ttyMSM0,115200n8 \
     earlycon=msm_geni_serial,0x4a90000 \
