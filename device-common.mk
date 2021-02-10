@@ -164,5 +164,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)
