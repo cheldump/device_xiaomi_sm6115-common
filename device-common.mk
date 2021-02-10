@@ -149,5 +149,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
+# IPACM
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)
