@@ -145,5 +145,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhwbinder.vendor
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)
