@@ -158,5 +158,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.bengal
 
+# Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)
