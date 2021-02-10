@@ -250,5 +250,13 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac_vendor
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)
