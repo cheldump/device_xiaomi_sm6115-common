@@ -232,6 +232,12 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_omx.vendor
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResCommon \
+    SystemUIResCommon \
+    TelephonyResCommon
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
