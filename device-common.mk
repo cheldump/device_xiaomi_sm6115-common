@@ -234,6 +234,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigCommon \
     FrameworksResCommon \
     SystemUIResCommon \
     TelephonyResCommon
