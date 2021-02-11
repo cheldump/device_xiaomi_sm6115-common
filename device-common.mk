@@ -351,6 +351,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor
 
 PRODUCT_PACKAGES += \
+    WifiResCommon
+
+PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
