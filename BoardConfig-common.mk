@@ -134,6 +134,9 @@ VENDOR_SECURITY_PATCH := 2023-02-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Touchpanel
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
