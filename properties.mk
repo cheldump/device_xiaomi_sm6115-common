@@ -163,6 +163,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.charger.enable_suspend=1
 
+# Chipset
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.soc.manufacturer=QTI
+
 # CNE
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.vendor.cne.feature=1
