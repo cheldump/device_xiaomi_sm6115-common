@@ -91,9 +91,6 @@ on post-fs-data
     # Create thermal configs folder
     mkdir /data/vendor/thermal 0771 root system
 
-on early-boot
-    start vendor.sensors
-
 on boot
     # Optimize audio scheduling
     write /dev/cpuset/audio-app/cpus 1-2
@@ -192,6 +189,9 @@ on boot
 
     # Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
+
+    # Start sensors service
+    start vendor.sensors
 
 on property:sys.boot_completed=1
     # Setup runtime cpusets
