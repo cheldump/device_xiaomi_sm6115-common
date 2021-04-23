@@ -311,6 +311,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.hwui.text_large_cache_width=2048 \
     ro.hwui.text_large_cache_height=1024
 
+# Incremental
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.incremental.enable=true
+
 # Media
 PRODUCT_SYSTEM_PROPERTIES += \
     media.aac_51_output_enabled=true \
