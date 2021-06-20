@@ -129,6 +129,7 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
+BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := bengal
 
 # Recovery
