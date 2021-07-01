@@ -367,4 +367,8 @@
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
     <bool name="config_allowAllRotations">true</bool>
+
+    <!-- The duration (in milliseconds) that should be applied to waveform vibrations that ends in
+         non-zero amplitudes, to bring the vibrator amplitude down to zero using this timing. -->
+    <integer name="config_vibrationWaveformRampDownDuration">20</integer>
 </resources>
