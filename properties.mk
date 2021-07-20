@@ -202,6 +202,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.keystore_desede=true
 
+# Dalvik
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.dex2oat64.enabled=true
+
 # Display
 PRODUCT_SYSTEM_PROPERTIES += \
     dev.pm.dyn_samplingrate=1
