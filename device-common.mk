@@ -207,7 +207,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.bengal
+    android.hardware.light-service.xiaomi
 
 # Media
 PRODUCT_PACKAGES += \
