@@ -397,7 +397,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
-    debug.sf.enable_advanced_sf_phase_offset=1 \
     debug.sf.early.app.duration=16600000 \
     debug.sf.early.sf.duration=16600000 \
     debug.sf.earlyGl.app.duration=16600000 \
