@@ -241,6 +241,11 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.2 \
+    vendor.qti.hardware.perf@2.2.vendor
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
