@@ -750,7 +750,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Public libraries
 PRODUCT_COPY_FILES += \
