@@ -364,6 +364,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.perf-hal.ver=2.2 \
     ro.vendor.perf.scroll_opt=1
 
+# Phantom process monitoring
+PRODUCT_VENDOR_PROPERTIES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # QCA1530 detection
 PRODUCT_SYSTEM_PROPERTIES += \
     sys.qca1530=detect
