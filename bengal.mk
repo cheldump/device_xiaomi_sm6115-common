@@ -682,6 +682,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CarrierConfigCommon \
     FrameworksResCommon \
+    SettingsProviderCommon \
     SettingsResCommon \
     SystemUIResCommon \
     TelephonyResCommon
