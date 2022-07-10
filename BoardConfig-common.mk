@@ -71,6 +71,7 @@ TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_minerva
 # Kernel
 BOARD_KERNEL_CMDLINE := \
     androidboot.console=ttyMSM0 \
+    androidboot.fstab_suffix=qcom \
     androidboot.hardware=qcom \
     androidboot.init_fatal_reboot_target=recovery \
     androidboot.memcg=1 \
