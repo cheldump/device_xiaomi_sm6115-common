@@ -232,6 +232,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.high_fps_late_sf_phase_offset_ns=-5000000 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
+    debug.sf.predict_hwc_composition_strategy=0 \
     persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_mode=9 \
     persist.sys.sf.color_saturation=1.0 \
