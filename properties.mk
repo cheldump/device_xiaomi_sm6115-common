@@ -360,6 +360,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.qcomsysd.enabled=1
 
 # RIL
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.qti.telephony.vt_cam_interface=2 \
+    persist.vendor.radio.report_codec=1 \
+    persist.vendor.radio.vdp_on_ims_cap=1
+
 PRODUCT_SYSTEM_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     persist.data.netmgrd.qos.enable=true \
