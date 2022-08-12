@@ -1,3 +1,6 @@
+# Audio
+ro.audio.usb.period_us                          u:object_r:vendor_audio_prop:s0
+
 # Bluetooth
 persist.vendor.btstack.                         u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bt.                              u:object_r:vendor_bluetooth_prop:s0
