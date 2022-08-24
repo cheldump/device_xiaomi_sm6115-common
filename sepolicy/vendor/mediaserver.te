@@ -3,3 +3,6 @@ allow mediaserver sound_device:chr_file rw_file_perms;
 
 # Allow mediaserver to access QSPM HAL Service for adreno profile processing
 hal_client_domain(mediaserver, vendor_hal_qspmhal)
+
+allow mediaserver sysfs_msm_subsys:dir search;
+allow mediaserver sysfs_msm_subsys:file r_file_perms;
