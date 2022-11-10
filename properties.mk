@@ -458,12 +458,6 @@ endif
 PRODUCT_VENDOR_PROPERTIES += \
     wifi.aware.interface=wifi-aware0
 
-# Wi-Fi Display
-PRODUCT_SYSTEM_PROPERTIES += \
-   debug.sf.enable_hwc_vds=1 \
-   persist.debug.wfd.enable=1 \
-   persist.sys.wfd.virtual=0
-
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
    zygote.critical_window.minute=10
