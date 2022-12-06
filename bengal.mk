@@ -686,10 +686,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
-# PASR
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.power.pasr.enabled=false
-
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
