@@ -358,10 +358,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.backup.ntpServer=0.pool.ntp.org
 
-# PASR
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.power.pasr.enabled=false
-
 # Perf
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.extension_library=libqti-perfd-client.so
