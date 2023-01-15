@@ -240,6 +240,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Properties
+include $(LOCAL_PATH)/properties.mk
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
