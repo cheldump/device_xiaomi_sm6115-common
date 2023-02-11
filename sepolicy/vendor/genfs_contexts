@@ -78,6 +78,9 @@ genfscon sysfs /devices/platform/soc/4804000.ufshc/clkgate_enable               
 # USB
 genfscon sysfs /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pm6125@2:qcom,usb-pdphy@1700/typec       u:object_r:sysfs_usb:s0
 genfscon sysfs /devices/platform/soc/4e00000.ssusb/4e00000.dwc3/udc/4e00000.dwc3                                                       u:object_r:vendor_sysfs_usb_controller:s0
+genfscon sysfs /devices/platform/soc/4e00000.ssusb/4e00000.dwc3/xhci-hcd.0.auto/usb1/1-1/idProduct                                     u:object_r:vendor_sysfs_usb_device:s0
+genfscon sysfs /devices/platform/soc/4e00000.ssusb/4e00000.dwc3/xhci-hcd.0.auto/usb1/1-1/idVendor                                      u:object_r:vendor_sysfs_usb_device:s0
+genfscon sysfs /devices/platform/soc/4e00000.ssusb/4e00000.dwc3/xhci-hcd.0.auto/usb1/1-1/version                                       u:object_r:vendor_sysfs_usb_device:s0
 
 # Vibrator
 genfscon sysfs /class/leds/vibrator/activate                                                                                           u:object_r:sysfs_leds:s0
