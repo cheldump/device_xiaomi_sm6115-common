@@ -466,6 +466,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.fp.sideCap=true
 
+# FUSE Passthrough
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
