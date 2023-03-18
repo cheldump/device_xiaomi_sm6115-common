@@ -295,6 +295,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.camera.aux.packageexcludelist=org.telegram.messenger,tw.nekomimi.nekogram,org.telegram.plus
 
 # Charger
+PRODUCT_PACKAGES += \
+    libsuspend
+
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.charger.enable_suspend=1
 
