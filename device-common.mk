@@ -322,6 +322,12 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
