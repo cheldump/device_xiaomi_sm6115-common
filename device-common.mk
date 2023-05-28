@@ -232,6 +232,10 @@ PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
 
+# IPC security
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
+
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
