@@ -10,5 +10,6 @@ allow hal_audio_default audio_socket:sock_file rw_file_perms;
 # Allow Audio hal to find system_suspend_hwservice
 allow hal_audio_default system_suspend_hwservice:hwservice_manager find;
 
-# Allow Audio hal to set audio properties
+# Allow Audio hal to set and get audio properties
 set_prop(hal_audio_default, vendor_audio_prop)
+get_prop(hal_audio_default, vendor_audio_prop)
