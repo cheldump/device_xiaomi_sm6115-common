@@ -13,6 +13,7 @@ allow hal_sensors_default {
   iio_device
   sensors_device
   sound_device
+  vendor_diag_device
 }:chr_file rw_file_perms;
 
 # Alow Sensors hal to find hal_audio_hwservice
