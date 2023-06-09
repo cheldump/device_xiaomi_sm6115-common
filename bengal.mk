@@ -344,8 +344,8 @@ PRODUCT_PACKAGES += \
     memtrack.bengal
 
 PRODUCT_PACKAGES += \
-    libdisplayconfig \
-    libdisplayconfig.system \
+    libdisplayconfig.qti \
+    libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
