@@ -202,5 +202,12 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.1-service.multihal
+
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)
