@@ -87,6 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # Configuration files
 include $(LOCAL_PATH)/audio/audio.mk
+include $(LOCAL_PATH)/media/media.mk
 
 # Consumer IR
 PRODUCT_PACKAGES += \
