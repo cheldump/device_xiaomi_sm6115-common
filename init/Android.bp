@@ -76,3 +76,10 @@ prebuilt_etc {
     src: "ueventd.xiaomi.rc",
     vendor: true,
 }
+
+// Filesystem table
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    vendor: true,
+}

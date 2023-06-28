@@ -264,6 +264,10 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.xiaomi.rc
 
+PRODUCT_PACKAGES += \
+    fstab.qcom_ramdisk \
+    fstab.qcom
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
