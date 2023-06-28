@@ -20,3 +20,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/xiaomi/minerva/minerva-vendor.mk)

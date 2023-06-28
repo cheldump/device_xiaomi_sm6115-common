@@ -98,6 +98,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2023-02-01
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
@@ -114,3 +117,6 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+
+# Inherit the proprietary files
+include vendor/xiaomi/minerva/BoardConfigVendor.mk
