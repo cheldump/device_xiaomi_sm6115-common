@@ -1,0 +1,11 @@
+allow system_server vendor_persist_camera_prop:file { open read getattr };
+get_prop(system_server, vendor_persist_camera_prop)
+
+allow system_server app_zygote:process getpgid;
+
+# Oem fastcharge
+allow system_server vendor_sysfs_battery_supply:file r_file_perms;
+
+allow system_server lirc_device:chr_file rw_file_perms;
+
+allow system_server proc_last_kmsg:file r_file_perms;

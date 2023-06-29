@@ -138,6 +138,9 @@ VENDOR_SECURITY_PATCH := 2023-02-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Touchpanel
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"

@@ -1,0 +1,33 @@
+# Bluetooth
+persist.vendor.btstack.                         u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bt.                              u:object_r:vendor_bluetooth_prop:s0
+
+# Camera
+camera.                                         u:object_r:vendor_camera_prop:s0
+persist.camera.                                 u:object_r:vendor_camera_prop:s0
+persist.vendor.camera                           u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.dualcal.               u:object_r:vendor_camera_prop:s0
+ro.vendor.camera.                               u:object_r:vendor_camera_prop:s0
+vendor.camera.                                  u:object_r:vendor_camera_prop:s0
+vendor.vidhance.preview.vs.cropfactor           u:object_r:vendor_camera_prop:s0
+vendor.vidhance.video.vs.cropfactor             u:object_r:vendor_camera_prop:s0
+
+# Fingerprint
+persist.sys.fp.                                 u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.fpc.                             u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.goodix.                          u:object_r:vendor_fingerprint_prop:s0
+persist.vendor.sys.fp.                          u:object_r:vendor_fingerprint_prop:s0
+ro.boot.fpsensor                                u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp.                                 u:object_r:vendor_fingerprint_prop:s0
+sys.fp.vendor                                   u:object_r:vendor_fingerprint_prop:s0
+vendor.fps_hal.                                 u:object_r:vendor_fingerprint_prop:s0
+vendor.fingerprint.vendor                       u:object_r:vendor_fingerprint_prop:s0
+vendor.panel.display.                           u:object_r:vendor_fingerprint_prop:s0
+vendor.sys.fp                                   u:object_r:vendor_fingerprint_prop:s0
+vendor.silead.fp.ext.enable                     u:object_r:vendor_fingerprint_prop:s0
+
+# NFC
+persist.vendor.nfc.                             u:object_r:vendor_nfc_prop:s0
+
+# Thermal
+vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
