@@ -104,7 +104,6 @@ PRODUCT_PACKAGES += \
 
 # Configuration files
 include $(LOCAL_PATH)/audio/audio.mk
-include $(LOCAL_PATH)/gps/gps.mk
 include $(LOCAL_PATH)/keylayout/keylayout.mk
 include $(LOCAL_PATH)/media/media.mk
 include $(LOCAL_PATH)/wifi/wifi.mk
