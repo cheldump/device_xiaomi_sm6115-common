@@ -113,6 +113,7 @@
 /sys/bus/platform/devices/soc:fpc1020/wakeup_enable                                      u:object_r:fingerprint_device:s0
 
 # Fingerprint HAL
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.xiaomi            u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/vendor\.silead\.hardware\.fingerprintext@1\.0-service                     u:object_r:hal_fingerprint_default_exec:s0
 
 # Health
