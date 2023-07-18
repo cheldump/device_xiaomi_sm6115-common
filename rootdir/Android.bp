@@ -96,3 +96,10 @@ prebuilt_etc {
     src: "etc/fstab.qcom",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "fstab.postinstall_avb",
+    filename: "fstab.postinstall",
+    src: "etc/fstab.postinstall",
+    product_specific: true,
+}
