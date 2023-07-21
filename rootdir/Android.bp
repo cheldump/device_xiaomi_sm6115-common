@@ -7,85 +7,85 @@
 // Init scripts
 sh_binary {
     name: "init.class_main.sh",
-    src: "init.class_main.sh",
+    src: "bin/init.class_main.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.early_boot.sh",
-    src: "init.qcom.early_boot.sh",
+    src: "bin/init.qcom.early_boot.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.post_boot.sh",
-    src: "init.qcom.post_boot.sh",
+    src: "bin/init.qcom.post_boot.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.usb.sh",
-    src: "init.qcom.usb.sh",
+    src: "bin/init.qcom.usb.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qcom.sh",
-    src: "init.qcom.sh",
+    src: "bin/init.qcom.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qti.dcvs.sh",
-    src: "init.qti.dcvs.sh",
+    src: "bin/init.qti.dcvs.sh",
     vendor: true,
 }
 
 sh_binary {
     name: "init.qti.early_init.sh",
-    src: "init.qti.early_init.sh",
+    src: "bin/init.qti.early_init.sh",
     vendor: true,
 }
 
 // Init configuration files
 prebuilt_etc {
     name: "init.qcom.factory.rc",
-    src: "init.qcom.factory.rc",
+    src: "etc/init.qcom.factory.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.qcom.usb.rc",
-    src: "init.qcom.usb.rc",
+    src: "etc/init.qcom.usb.rc",
     vendor: true,
     sub_dir: "init/hw",
 }
 
 prebuilt_etc {
     name: "init.qcom.power.rc",
-    src: "init.qcom.power.rc",
+    src: "etc/init.qcom.power.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.qcom.rc",
-    src: "init.qcom.rc",
+    src: "etc/init.qcom.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "init.recovery.qcom.rc",
-    src: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
     sub_dir: "init",
     recovery: true,
 }
 
 prebuilt_etc {
     name: "init.target.rc",
-    src: "init.target.rc",
+    src: "etc/init.target.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
@@ -93,33 +93,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "ueventd.xiaomi.rc",
     filename: "ueventd.rc",
-    src: "ueventd.xiaomi.rc",
+    src: "etc/ueventd.xiaomi.rc",
     vendor: true,
 }
 
 // Filesystem table
 prebuilt_etc {
     name: "fstab.qcom",
-    src: "fstab.qcom",
+    src: "etc/fstab.qcom",
     vendor: true,
-}
-
-cc_library_static {
-    name: "libinit_xiaomi_minerva",
-    srcs: [
-        "libinit_dalvik_heap.cpp",
-        "libinit_variant.cpp",
-        "libinit_utils.cpp",
-    ],
-    whole_static_libs: ["libbase"],
-    export_include_dirs: ["include"],
-    recovery_available: true,
-}
-
-cc_library_static {
-    name: "init_xiaomi_minerva",
-    srcs: ["init_xiaomi_minerva.cpp"],
-    whole_static_libs: ["libinit_xiaomi_minerva"],
-    include_dirs: ["system/core/init"],
-    recovery_available: true,
 }
