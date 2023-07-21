@@ -5,13 +5,9 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1804800",
-        "1171200",
-        "614400",
-        "1171201",
-        "1305600",
+        "1612800",
         "1420800",
-        "1612801"
+        "1305600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -21,11 +17,9 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "614399",
         "1017600",
-        "1305600",
-        "1420800",
-        "614400"
+        "864000",
+        "300"
       ],
       "ResetOnInit": true
     },
@@ -34,14 +28,9 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "2016000",
         "1804800",
         "1612800",
-        "9999998",
-        "1056000",
-        "1612801",
-        "1804801",
-        "2016001"
+        "1401600"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -51,31 +40,32 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1804800",
-        "1612800",
         "1401600",
-        "1612801",
-        "902400"
+        "1056000",
+        "652800",
+        "300"
       ],
       "ResetOnInit": true
     },
     {
       "Name": "GPUMaxFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
       "Values": [
-        "0",
-        "3"
+        "950000000",
+        "900000000",
+        "820000000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
+      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
       "Values": [
-        "0",
-        "3",
-        "7"
+        "745000000",
+        "600000000",
+        "465000000",
+        "320000000"
       ],
       "ResetOnInit": true
     },
@@ -83,9 +73,9 @@
       "Name": "GPUBusMinFreq",
       "Path": "/sys/class/devfreq/soc:qcom,gpubw/min_freq",
       "Values": [
-        "7795",
-        "5195",
-        "3440",
+        "1804",
+        "1555",
+        "1353",
         "0"
       ],
       "ResetOnInit": true
@@ -134,6 +124,62 @@
       "Values": [
         "1",
         "0"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHystTriggerCount",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_trigger_count",
+      "Values": [
+        "0",
+        "3"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHistMemory",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hist_memory",
+      "Values": [
+        "0",
+        "20"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHystLength",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_length",
+      "Values": [
+        "0",
+        "10"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWSampleMs",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/sample_ms",
+      "Values": [
+        "10",
+        "4"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWIOPercent",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/io_percent",
+      "Values": [
+        "80",
+        "50"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/min_freq",
+      "Values": [
+        "11863",
+        "7759",
+        "5859",
+        "4173"
       ],
       "ResetOnInit": true
     },
@@ -219,6 +265,30 @@
       "Node": "TASchedtuneBoost",
       "Duration": 1000,
       "Value": "5"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWHystTriggerCount",
+      "Duration": 1000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWHystLength",
+      "Duration": 1000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWHistMemory",
+      "Duration": 1000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "CPUBWMinFreq",
+      "Duration": 1000,
+      "Value": "7759"
     },
     {
       "PowerHint": "LAUNCH",
