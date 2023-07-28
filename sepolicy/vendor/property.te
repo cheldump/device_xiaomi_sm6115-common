@@ -13,5 +13,8 @@ vendor_restricted_prop(vendor_fingerprint_prop);
 # NFC
 vendor_internal_prop(vendor_nfc_prop)
 
+# Power
+vendor_internal_prop(vendor_power_prop)
+
 # Thermal
 vendor_internal_prop(vendor_thermal_normal_prop);
