@@ -1,5 +1,7 @@
-allow kernel per_boot_file:file r_file_perms;
-allow kernel vendor_firmware_file:dir search;
-allow kernel vendor_firmware_file:file r_file_perms;
-allow kernel vendor_firmware_file:lnk_file read;
-allow kernel vendor_file:file r_file_perms;
+# For diag over socket
+userdebug_or_eng(`
+  allow kernel self:qipcrtr_socket create_socket_perms_no_ioctl;
+')
+
+# Ignore the socket if it fails to create
+dontaudit kernel self:qipcrtr_socket create;
