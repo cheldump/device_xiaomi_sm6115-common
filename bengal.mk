@@ -320,18 +320,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed \
     dalvik.vm.dex2oat64.enabled=true
 
-# Dex
-PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    pm.dexopt.boot=verify \
-    pm.dexopt.first-boot=verify \
-    pm.dexopt.install=speed-profile \
-    dalvik.vm.image-dex2oat-filter=speed \
-    dalvik.vm.image-dex2oat-threads=8 \
-    dalvik.vm.dex2oat-filter=speed \
-    dalvik.vm.dex2oat-threads=8
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
