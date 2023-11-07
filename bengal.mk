@@ -315,11 +315,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# Dalvik
-PRODUCT_SYSTEM_PROPERTIES += \
-    dalvik.vm.systemuicompilerfilter=speed \
-    dalvik.vm.dex2oat64.enabled=true
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
