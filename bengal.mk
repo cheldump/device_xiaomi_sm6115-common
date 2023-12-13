@@ -365,8 +365,8 @@ PRODUCT_PACKAGES += \
     memtrack.bengal
 
 PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libdisplayconfig.system.qti \
+    libdisplayconfig \
+    libdisplayconfig.system \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
@@ -999,19 +999,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     wifi.aware.interface=wifi-aware0
-
-# Wi-Fi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor:32
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    debug.sf.enable_hwc_vds=0 \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
 
 # Zygote
 PRODUCT_PROPERTY_OVERRIDES += \
