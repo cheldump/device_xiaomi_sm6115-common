@@ -229,9 +229,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libldacBT_bco
-
-PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
