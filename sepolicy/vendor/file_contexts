@@ -91,7 +91,7 @@
 /sys/devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-03/1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000/modalias u:object_r:vendor_sysfs_fps_attr:s0
 
 # Fingerprint data
-/data/gf_data(/.*)?                                                                      u:object_r:goodix_fingerprint_data_file:s0
+/data/gf_data(/.*)?                                                                      u:object_r:fingerprint_data_file:s0
 /data/vendor/focaltech(/.*)?                                                             u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpc(/.*)?                                                                   u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/fpdump(/.*)?                                                                u:object_r:fingerprint_vendor_data_file:s0
