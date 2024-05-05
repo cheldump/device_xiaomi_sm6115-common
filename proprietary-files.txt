@@ -374,9 +374,6 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|8f1bd782c728fc275b8e78785a4866
 vendor/etc/permissions/com.google.android.feature.PREMIER_TIER.xml
 
 # Graphics - from spacewar-user-13-TKQ1.220915.002-2302132131-release-keys (For 4.19)
-vendor/lib/libC2D2.so|1c89e545a5dabc94d27db32031594a792d91d6fd
-vendor/lib/libVkLayer_q3dtools.so|2f4f7dd92ce60cbacc90b7e59f90f390d66183af
-vendor/lib/libc2d30_bltlib.so|5dce0e76e03b9cac4fc1f104524625a6f561fe91
 vendor/lib64/libC2D2.so|0b4aa67ef7e86df61a1bfd7dfd4680e0f0d7104c
 vendor/lib64/libVkLayer_q3dtools.so|f629dbef81a29c662646bd47204d8e23a0af4692
 vendor/lib64/libc2d30_bltlib.so|da219e655056ca4a765ce3f6cf2b992d75088269
@@ -386,24 +383,6 @@ vendor/gpu/kbc/sequence_manifest.bin|17e1f9149826ef478502c750bcf9352274097c80
 vendor/gpu/kbc/unified_kbcs_32.bin|aa7b4e916fb3fab8df7700deb458d0726a549482
 vendor/gpu/kbc/unified_kbcs_64.bin|bdfadc6b8e03d7da5b8d31b4f7688e7dba4b07ce
 vendor/gpu/kbc/unified_ksqs.bin|e3470ad9fc644aea9c02dee948bb210149408dda
-vendor/lib/egl/eglSubDriverAndroid.so|6b9a66497c1d1787fa7116abe0089229f5bfff1e
-vendor/lib/egl/libEGL_adreno.so|99264c4bcc4e04795e598e3530535fea7cad88ac
-vendor/lib/egl/libGLESv1_CM_adreno.so|eb02bf0adfe2c71a3f58c486e243b64ce7044f0c
-vendor/lib/egl/libGLESv2_adreno.so|2e9c7540a05d003f89d177fe0add2cfb4e72b380
-vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|95279855beb2456862da2321670026e85acfefc3
-vendor/lib/egl/libq3dtools_adreno.so|dc7f42f038a8568b0168bb7c3483629f0b4b57f8
-vendor/lib/egl/libq3dtools_esx.so|575efb20955274fb11bdadd91febf204b05a9c62
-vendor/lib/libCB.so|56a32caff72be9b649e799eca042305d068b49fa
-vendor/lib/libOpenCL.so|3f44a42a0a3c279daade55d13087a4df51bc11bc
-vendor/lib/libadreno_app_profiles.so|35b084a83326b03352a0b5e0e5b62f5ffbacba22
-vendor/lib/libadreno_utils.so|d8d436fbb11a69ad9074be46e574af0793bee941
-vendor/lib/libgpudataproducer.so|727dedb1a78f88cb9babb35c16ee4774e1f1a949
-vendor/lib/libgsl.so|98f2aa12f908325b3e6ea062be53b23eb7d585aa
-vendor/lib/libkcl.so|f203447262e3f87dcd038e73d545d13b3094917b
-vendor/lib/libkernelmanager.so|a89928eccc9c8a390ae19856fac9596231d1998a
-vendor/lib/libllvm-glnext.so|6bd7f96728c262035a313c545572879de724f2d4
-vendor/lib/libllvm-qcom.so|c399e5b43613ce79cb066e91f7f2451726a09ae4
-vendor/lib/libllvm-qgl.so|ca06eb8bc305508b0af21dfa41db66d747c912f6
 vendor/lib64/egl/eglSubDriverAndroid.so|d9469d1e07dd1155528778f0a453ad791ceadbbc
 vendor/lib64/egl/libEGL_adreno.so|69f98ba347b32d5f80f9423a3983c6ff8048b062
 vendor/lib64/egl/libGLESv1_CM_adreno.so|29a64765d2b5d35261ec98ed68031d5699954307
@@ -424,7 +403,6 @@ vendor/lib64/libllvm-qcom.so|210fdef3513ca2dc022e54b50779c0024a6c6730
 vendor/lib64/libllvm-qgl.so|9b265fb6c784e3117d22a489cc2770e9f26b3178
 
 # Graphics (Vulkan) - from pong-user-14-UKQ1.230804.001-2309192131-release-keys 
-vendor/lib/hw/vulkan.adreno.so|b4f8a8b2f79576e195d6b48d9d33a7d759112cfe
 vendor/lib64/hw/vulkan.adreno.so|887368165a65f333e4b2277cbba2a0b5f8ac9750
 
 # IMS
